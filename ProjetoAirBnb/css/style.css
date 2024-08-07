@@ -1,0 +1,201 @@
+:root{
+    --margin-default:20px 0;
+    --color-AirBNB: #FF5A5F;
+    --border-default:10px;
+    --transition:0.5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* ver se está certo */
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+
+a{
+    display: inline-block;
+}
+
+img{
+    border-radius: 10%;
+} 
+
+.geral{
+    width: 100%;
+    height: 100vh;
+    padding: 0 40px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* aplicar para textos responsivos */
+    /* font-size: clamp(3vmin, 22px, 4vmin); */
+    /* propriedade para organizar (padronizar) o tamanho das linhas */
+    /* text-wrap: balance; */
+    /* altura da linha para melhor leitura do usuário */
+    /* line-height: 1.6; */
+}
+
+.imagens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: var(--margin-default);
+}
+
+.principal{
+    width: 50%;  
+}
+.principal img{
+    width: 100%;
+    border-radius: var(--border-default);
+}
+
+.subimagens, .subimagens2{
+    width: 28%;
+    
+}
+
+.subimagens img{
+    width: 100%;
+    padding: 5px;
+}
+
+.subimagens2 img{
+    width: 100%;
+    padding: 5px;
+}
+
+@media(width <=800px){
+    .imagens{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subimagens, .subimagens2, .principal{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    .icones-geral{
+        width: 50%;
+        display: block;
+        padding: 0 0 0 55px;
+    }
+    .icones{
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+   /* Ajustar ícones e parte do botão + preço para ficar responsivo ou ver o que alterar para a tela de 800px*/
+}
+
+
+
+.descricao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: var(--margin-default);
+
+}
+
+.final{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.icones-geral{
+    width: 35%;
+}
+
+.icones{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 10px;
+}
+
+.icones i{
+    font-size: 400%;  
+}
+
+i{
+    transition: var(--transition);
+}
+
+i:hover{
+    transition: var(--transition);
+    color: var(--color-AirBNB);
+}
+
+.caixa{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa p{
+    font-size: 40px;
+}
+
+.conteudo{
+    width: 50%;
+    border: 1px solid var(--color-AirBNB);
+    border-radius: var(--border-default);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.conteudo:hover{
+    transition: var(--transition);
+    background-color: var(--color-AirBNB);
+}
+
+.conteudo:hover p{
+    color: #ffffff;
+}
+
+.conteudo p{
+    font-size: 40px;
+}
+
+.botao{
+    margin-top: var(--border-default);
+    border: 1px solid var(--color-AirBNB);
+    padding: 8px 30px;
+    background-color: var(--color-AirBNB);
+    border-radius: var(--border-default);  
+    transition: var(--transition);
+} 
+
+
+.conteudo a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: var(--transition);
+}
+
+.conteudo a:hover{
+    transition: var(--transition);
+    background-color: #ffffff;
+}   
