@@ -8,4 +8,4 @@ Estruturação de páginas web.
 Aplicação de estilos e responsividade.
 
 🌐 Link do Projeto
-Acesse o projeto online: Airbnb Clone
+Acesse o projeto: https://airbnb-nu-weld.vercel.app/
